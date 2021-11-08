@@ -12,7 +12,15 @@ class TableViewCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var locationLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
-    @IBOutlet var thumbnailImageView: UIImageView!
+    @IBOutlet var thumbnailImageView: UIImageView! {
+        didSet {
+            // image become circle:
+            // thumbnailImageView.layer.cornerRadius = thumbnailImageView.bounds.width / 2
+            thumbnailImageView.layer.cornerRadius = 24
+            thumbnailImageView.clipsToBounds = true
+        }
+    }
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

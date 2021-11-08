@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30D81DA2739006B00041EBD /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D81D92739006B00041EBD /* Restaurant.swift */; };
+		D30D81E127390BA900041EBD /* DiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D81E027390BA900041EBD /* DiffableDataSource.swift */; };
+		D30D81E3273918A100041EBD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30D81E2273918A100041EBD /* DetailViewController.swift */; };
 		D3A5C3BB272FC56800DBD90F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A5C3BA272FC56800DBD90F /* AppDelegate.swift */; };
 		D3A5C3BD272FC56800DBD90F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A5C3BC272FC56800DBD90F /* SceneDelegate.swift */; };
 		D3A5C3C2272FC56800DBD90F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A5C3C0272FC56800DBD90F /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30D81D92739006B00041EBD /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D30D81E027390BA900041EBD /* DiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSource.swift; sourceTree = "<group>"; };
+		D30D81E2273918A100041EBD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D3A5C3B7272FC56800DBD90F /* foodpin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodpin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A5C3BA272FC56800DBD90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3A5C3BC272FC56800DBD90F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D30D81DB2739059500041EBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D30D81D92739006B00041EBD /* Restaurant.swift */,
+				D30D81E027390BA900041EBD /* DiffableDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D30D81DC273905A600041EBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3A5C3D0272FDDBE00DBD90F /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D30D81DD273905B100041EBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3A5C3CE272FC72C00DBD90F /* TableViewController.swift */,
+				D30D81E2273918A100041EBD /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D3A5C3AE272FC56800DBD90F = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +90,15 @@
 		D3A5C3B9272FC56800DBD90F /* foodpin */ = {
 			isa = PBXGroup;
 			children = (
+				D30D81DD273905B100041EBD /* Controller */,
+				D30D81DC273905A600041EBD /* View */,
+				D30D81DB2739059500041EBD /* Model */,
 				D3A5C3BA272FC56800DBD90F /* AppDelegate.swift */,
 				D3A5C3BC272FC56800DBD90F /* SceneDelegate.swift */,
 				D3A5C3C0272FC56800DBD90F /* Main.storyboard */,
-				D3A5C3D0272FDDBE00DBD90F /* TableViewCell.swift */,
 				D3A5C3C3272FC56900DBD90F /* Assets.xcassets */,
 				D3A5C3C5272FC56900DBD90F /* LaunchScreen.storyboard */,
 				D3A5C3C8272FC56900DBD90F /* Info.plist */,
-				D3A5C3CE272FC72C00DBD90F /* TableViewController.swift */,
 			);
 			path = foodpin;
 			sourceTree = "<group>";
@@ -141,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30D81DA2739006B00041EBD /* Restaurant.swift in Sources */,
 				D3A5C3BB272FC56800DBD90F /* AppDelegate.swift in Sources */,
 				D3A5C3D1272FDDBE00DBD90F /* TableViewCell.swift in Sources */,
 				D3A5C3CF272FC72C00DBD90F /* TableViewController.swift in Sources */,
 				D3A5C3BD272FC56800DBD90F /* SceneDelegate.swift in Sources */,
+				D30D81E127390BA900041EBD /* DiffableDataSource.swift in Sources */,
+				D30D81E3273918A100041EBD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
